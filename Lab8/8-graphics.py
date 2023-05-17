@@ -49,9 +49,10 @@ ax.set_ylabel("напряжение, В")
 ax.set_xlabel("время, с")
 
 #legend and line
-ax.plot(data_time, data, c='blue', linewidth=0.75, label = 'V(t)')
-ax.scatter(data_time[0:data.size:20], data[0:data.size:20], marker = 's', c = 'red', s=10)
-
+ax.plot(data_time[::50], data[::50], c='blue', linewidth=0.75, label = 'Voltage(t)', marker = 's')
+#ax.scatter(data_time[0:data.size:20], data[0:data.size:20], marker = 's', c = 'red', s=10)
+ax.text(11,3.1,"Graph shows the beauty of math and physics")
+ax.text(11,3,"All rights reserved")
 ax.legend(shadow = True, loc = 'upper right', fontsize = 30)
 
 #save
