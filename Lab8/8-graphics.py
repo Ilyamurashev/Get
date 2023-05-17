@@ -49,7 +49,7 @@ ax.set_ylabel("напряжение, В")
 ax.set_xlabel("время, с")
 
 #legend and line
-ax.plot(data_time, data, c='gray', linewidth=0.75, label = 'V(t)')
+ax.plot(data_time, data, c='blue', linewidth=0.75, label = 'V(t)')
 ax.scatter(data_time[0:data.size:20], data[0:data.size:20], marker = 's', c = 'red', s=10)
 
 ax.legend(shadow = True, loc = 'upper right', fontsize = 30)
